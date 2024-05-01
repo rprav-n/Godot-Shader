@@ -1,15 +1,15 @@
 shader_type canvas_item;
 
+uniform sampler2D sampled_texture;
+
+void vertex() {
+	
+}
+
 void fragment() {
-	//COLOR.rb = vec2(0.0, 0.0);
-	//COLOR.rgb = vec3(vec2(0.0), COLOR.b);
-	
-	//COLOR.gbr = vec3(vec2(0.0), COLOR.r);
-	//COLOR[0] = 0.0; // red
-	//COLOR[1] = 0.0; // green
-	//COLOR[2] = 0.0; // blue
-	
-	COLOR.a = 1.0 - COLOR.a;
+	vec3 zebra_tex = texture(sampled_texture, UV).rgb;
+	COLOR.rgb = zebra_tex;
 	
 	
+	//COLOR.rbg *= vec3(0.7, 0.7, 0.8);
 }

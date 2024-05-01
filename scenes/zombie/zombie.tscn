@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://7uia27yq1v21"]
+[gd_scene load_steps=5 format=3 uid="uid://7uia27yq1v21"]
 
 [ext_resource type="Shader" path="res://scenes/zombie/zombie.gdshader" id="1_l2gt8"]
 [ext_resource type="Texture2D" uid="uid://uce211kjd616" path="res://assets/white-zombie.png" id="1_uk8s8"]
+[ext_resource type="Texture2D" uid="uid://447w556ajirn" path="res://assets/zebra.png" id="2_upaf0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1w0ii"]
 shader = ExtResource("1_l2gt8")
+shader_parameter/sampled_texture = ExtResource("2_upaf0")
 
 [node name="Zombie" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_1w0ii")
+position = Vector2(0, -1)
 texture = ExtResource("1_uk8s8")
