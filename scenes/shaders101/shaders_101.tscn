@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfbapmvn4wsv5"]
+
+[ext_resource type="Shader" path="res://scenes/shaders101/shaders_101.gdshader" id="1_3t4iy"]
+[ext_resource type="Texture2D" uid="uid://uce211kjd616" path="res://assets/white-zombie.png" id="1_vp7if"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0rxah"]
+shader = ExtResource("1_3t4iy")
+
+[node name="Shaders101" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_0rxah")
+texture = ExtResource("1_vp7if")
