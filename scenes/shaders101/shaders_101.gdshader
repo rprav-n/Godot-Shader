@@ -16,6 +16,9 @@ void vertext() {
 	
 	// ivec2 - i for int
 	// bvec2 - b for bool
+	
+	vec3 v3 = my_vect.xyz; // this method is called "SWIZZLING"
+	v3.xy = my_vec3.yz;
 }
 
 void fragment() {
