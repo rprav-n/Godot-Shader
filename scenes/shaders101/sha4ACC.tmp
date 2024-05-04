@@ -2,7 +2,7 @@
 
 [ext_resource type="Shader" path="res://scenes/shaders101/shaders_101.gdshader" id="1_3t4iy"]
 [ext_resource type="Script" path="res://scenes/shaders101/shaders_101.gd" id="1_sgmek"]
-[ext_resource type="Texture2D" uid="uid://dhu7258ie0hb2" path="res://icon.svg" id="3_5ud8y"]
+[ext_resource type="Texture2D" uid="uid://uce211kjd616" path="res://assets/white-zombie.png" id="1_vp7if"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0rxah"]
 shader = ExtResource("1_3t4iy")
@@ -12,4 +12,4 @@ script = ExtResource("1_sgmek")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_0rxah")
-texture = ExtResource("3_5ud8y")
+texture = ExtResource("1_vp7if")
