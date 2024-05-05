@@ -6,6 +6,9 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0rxah"]
 shader = ExtResource("1_3t4iy")
+shader_parameter/speed = 2.0
+shader_parameter/color = Color(0, 0, 0, 1)
+shader_parameter/my_int = null
 
 [node name="Shaders101" type="Node2D"]
 script = ExtResource("1_sgmek")
