@@ -6,7 +6,7 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0rxah"]
 shader = ExtResource("1_3t4iy")
-shader_parameter/speed = 2.0
+shader_parameter/speed = 1.0
 shader_parameter/color = Color(0, 0, 0, 1)
 shader_parameter/my_int = null
 
@@ -15,4 +15,5 @@ script = ExtResource("1_sgmek")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_0rxah")
+position = Vector2(526, 365)
 texture = ExtResource("3_5ud8y")
